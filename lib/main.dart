@@ -3,11 +3,31 @@ import 'dart:math';
 
 int index = 0;
 var list = [
-  'either the ai decided to be lazy, or you didnt enter anything',
-  'one',
-  'two',
-  'three',
+  'either the ai decided to be lazy, or you just got here',
+  'ignore the problem, it will work out',
+  'duct tape can fix anything tbh',
+  'cut down a tree',
   'go commit arson',
+  'i really dont care tbh',
+  'im fond of tax evasion',
+  'commit alivent (but like dont really)',
+  'listen to music for a bit then think it over',
+  'bribe someone involved',
+  'doom scroll instagram and follow @creativename64 while youre at it',
+  'just fina another chance to',
+  'get that cringe outta here',
+  'do nothing',
+  'give me money',
+  'just skip it, smh',
+  'lock anything and anyone involved in your problem in a closet',
+  'sleep',
+  'drink iced coffee',
+  'go touch grass',
+  'is this even a problem',
+  'just stop',
+  'a- are you ok',
+  'high heels or risers',
+  'find a garbage dump and jump into it',
 ];
 var gae = 'enter something in the box then i can give you advice';
 
@@ -58,8 +78,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
               return null;
             },
           ),
-          Padding(
-            padding: const EdgeInsets.symmetric(vertical: 16.0),
+          Center(
             child: ElevatedButton(
               onPressed: () {
                 final _random = Random();
@@ -72,7 +91,10 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
               child: const Text('help me pls'),
             ),
           ),
-          Text(list[index])
+          Text(
+            list[index],
+            textAlign: TextAlign.center,
+          )
 
           // ignore: unnecessary_new
         ],
