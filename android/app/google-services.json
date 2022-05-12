@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "49382995294",
+    "project_id": "verygoodproblemsolver",
+    "storage_bucket": "verygoodproblemsolver.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:49382995294:android:f456e990392e7ce00acbcf",
+        "android_client_info": {
+          "package_name": "com.example.life_advice"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "49382995294-55o3vefi7d6cs63vj5at8ithe154h9pp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCaHidPNBK-LW_ZXSQ6Tm198M-p8R2Tv14"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "49382995294-55o3vefi7d6cs63vj5at8ithe154h9pp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
