@@ -28,6 +28,31 @@ var list = [
   'a- are you ok',
   'high heels or risers',
   'find a garbage dump and jump into it',
+  'don’t ever stop learning and growing as a person',
+  'keep some change just in case',
+  'never, never, never give in',
+  'do less shit',
+  'but why?',
+  'go with your gut',
+  'freeze your fruits and vegss',
+  'clean your room or house',
+  'drink less iced coffee',
+  'why are you asking a stupid program by a stupid person for advice, reach out to someone that you trust',
+  'consolidate your debt',
+  'you get all the time to be yourself but thats bullcrap, instead be me. im cool as fuck',
+  'just be youself',
+  'stop eating it',
+  'gaslight, gatekeep, girlboss',
+  'give several undeniable instances',
+  'get rid of toxic friends and substances',
+  'move to a more secure location',
+  'get inspired by other people’s success',
+  'google it',
+  'im sorry but you are going to die, you cant even do anything about it',
+  'thats cool and all but have you heard about the 4v1 asemetrical multiplayer horror game idenity v by netease?',
+  'there is no backsliding into old habits, meerly re-runs',
+  'facebook said that it had now fixed the problem',
+  'it COULD be worse',
 ];
 var gae = 'enter something in the box then i can give you advice';
 
@@ -36,7 +61,7 @@ void main() => runApp(const MyApp());
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
-  static const String _title = 'Life Advice Giver';
+  static const String _title = 'Problem Solver';
 
   @override
   Widget build(BuildContext context) {
