@@ -92,10 +92,11 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
+          const SizedBox(height: 40),
           TextFormField(
             decoration: const InputDecoration(
-              hintText: 'what do you need help with?',
-            ),
+                hintText: 'what do you need help with?',
+                contentPadding: EdgeInsetsDirectional.only(start: 40, end: 40)),
             validator: (String? value) {
               if (value == null || value.isEmpty) {
                 return 'either you have no problems or that box is empty';
@@ -103,6 +104,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
               return null;
             },
           ),
+          const SizedBox(height: 20),
           Center(
             child: ElevatedButton(
               onPressed: () {
@@ -116,10 +118,16 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
               child: const Text('help me pls'),
             ),
           ),
-          Text(
-            list[index],
-            textAlign: TextAlign.center,
-          )
+          const SizedBox(height: 20),
+          Container(
+              padding: const EdgeInsets.only(left: 20, right: 20),
+              child: Center(
+                child: Text(
+                  list[index],
+                  textAlign: TextAlign.center,
+                  style: const TextStyle(fontSize: 14),
+                ),
+              ))
 
           // ignore: unnecessary_new
         ],
