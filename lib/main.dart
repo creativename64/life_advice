@@ -182,7 +182,23 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
                   textAlign: TextAlign.center,
                   style: const TextStyle(fontSize: 14),
                 ),
-              ))
+              )),
+          const SizedBox(
+            height: 10,
+          ),
+          const Align(
+            alignment: Alignment.bottomCenter,
+            child: Text(
+              'version 0.9.0',
+              style: TextStyle(fontSize: 8, color: Colors.blueGrey),
+            ),
+          ),
+          const Align(
+            alignment: Alignment.bottomCenter,
+            child: SizedBox(
+              height: 20,
+            ),
+          ),
 
           // ignore: unnecessary_new
         ],
