@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'dart:math';
 
+bool boxvalue = false;
 int index = 0;
 var list = [
-  'either the ai decided to be lazy, or you just got here',
+  'either the ai decided to be lazy, you just got here, or the box is empty',
   'ignore the problem, it will work out',
   'duct tape can fix anything tbh',
   'cut down a tree',
@@ -86,7 +87,7 @@ var list = [
   'oh crap this is a human, not a frickin chicken.. BOB GET UR ASS OVER HERE',
   'wow.. just wow',
   'watch heartstopper on netflix, the vibes are immaculate',
-  'gae?',
+  '🫂',
 ];
 var gae = 'enter something in the box then i can give you advice';
 
@@ -145,9 +146,12 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
                 hintText: 'what do you need help with?',
                 contentPadding: EdgeInsetsDirectional.only(start: 40, end: 40)),
             validator: (String? value) {
-              if (value == null || value.isEmpty) {
-                return 'either you have no problems or that box is empty';
+              if (value == null) {
+                boxvalue = false;
+              } else {
+                boxvalue = true;
               }
+
               return null;
             },
           ),
@@ -155,11 +159,15 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
           Center(
             child: ElevatedButton(
               onPressed: () {
-                final _random = Random();
                 // generate a random index based on the list length
                 // and use it to retrieve the element
                 setState(() {
-                  index = _random.nextInt(list.length);
+                  if (boxvalue = true) {
+                    final _random = Random();
+                    index = _random.nextInt(list.length);
+                  } else {
+                    index = 0;
+                  }
                 });
               },
               child: const Text('help me pls'),
