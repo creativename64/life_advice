@@ -88,6 +88,21 @@ var list = [
   'wow.. just wow',
   'watch heartstopper on netflix, the vibes are immaculate',
   '🫂',
+  'a narrow focus brings big results',
+  'lifes good but not fair',
+  'do less stuff in your day',
+  'build your personal brand, like mine of giving bad life advice somehow',
+  'read a book, like aurora rising, thats a good book',
+  '​',
+  'bread is good, problem are bad, eat more bread',
+  'i want to sleep, so like how about you go do that',
+  'take a day to yourself and like step away from the problems (if you can)',
+  'https://www.anxietycanada.com/articles/how-to-solve-daily-life-problems/',
+  'keep pressing the button a few times, you will find something you like eventually. there are over 100 responses',
+  'ahhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh',
+  'b r e a t h i n g  e x e r s i z e s',
+  'balls',
+  'and thats 100 heck yeah i can stop now',
 ];
 var gae = 'enter something in the box then i can give you advice';
 
@@ -189,7 +204,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
           const Align(
             alignment: Alignment.bottomCenter,
             child: Text(
-              'version 0.9.0',
+              'version 1.0.0 (but it still sucks)',
               style: TextStyle(fontSize: 8, color: Colors.blueGrey),
             ),
           ),
